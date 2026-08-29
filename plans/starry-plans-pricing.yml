@@ -1,0 +1,76 @@
+generated: '2026-08-29'
+method: searched
+source: https://starry.com/internet
+scope: consumer-broadband-service
+scope_note: >-
+  These are Starry's retail INTERNET SERVICE plans, not API plans. Starry publishes no
+  public API and therefore no API pricing tier; this artifact records the commercial
+  surface the company actually publishes so the profile is not silently empty. Prices
+  cross-checked against Starry's own llms.txt (https://starry.com/llms.txt), which
+  states the same three tiers and the same $5/mo debit-card discount.
+currency: USD
+billing_period: monthly
+contract: month-to-month, cancel or pause any time, no termination fee
+plan_count: 3
+plans:
+- name: Starry 200
+  price: 30
+  price_note: $30/mo with the $5/mo autopay-by-debit discount; $35/mo otherwise.
+  currency: USD
+  billing_period: monthly
+  download_mbps: 200
+  upload_mbps: 50
+  included:
+  - Unlimited data, no caps
+  - Wi-Fi router included
+  - Free professional installation
+  - 24/7 support
+  - 3-year price lock
+  - 30-day money-back guarantee
+- name: Starry 500
+  price: 40
+  price_note: $40/mo with the debit-card discount; $45/mo otherwise. Marketed as "Most Popular".
+  currency: USD
+  billing_period: monthly
+  download_mbps: 500
+  upload_mbps: 50
+  included:
+  - Unlimited data, no caps
+  - Wi-Fi router included
+  - Free professional installation
+  - 24/7 support
+  - 3-year price lock
+  - 30-day money-back guarantee
+- name: Starry Gigabit
+  price: 45
+  price_note: $45/mo with the debit-card discount; $50/mo otherwise.
+  currency: USD
+  billing_period: monthly
+  download_mbps: 1000
+  upload_mbps: 250
+  upload_note: 250 Mbps upload is available in select locations only.
+  included:
+  - Unlimited data, no caps
+  - Wi-Fi router included
+  - Free professional installation
+  - 24/7 support
+  - 3-year price lock
+  - 30-day money-back guarantee
+add_ons:
+- name: Upload Boost
+  price: 5
+  currency: USD
+  billing_period: monthly
+  description: Doubles upload speed. Available in select locations and with select plans.
+credits:
+- name: Contract cancellation reimbursement
+  amount_up_to: 200
+  currency: USD
+  description: Account credit reimbursing early-termination fees charged by a previous provider.
+- name: Referral program
+  description: One free month of internet for the referrer and the referred customer per successful signup.
+enterprise:
+- name: Multifamily / property partner (bulk + wholesale)
+  url: https://starry.com/properties
+  price: null
+  note: Bulk and wholesale pricing for property managers and building owners is quote-only; no published rate card.

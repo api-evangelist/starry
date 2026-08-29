@@ -1,17 +1,37 @@
 aid: starry
 name: Starry
-description: 'Starry is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Starry, Inc. is a Boston-founded (2014) internet service provider that
+  delivers fixed wireless broadband to multi-dwelling buildings and homes in five US
+  metropolitan markets — Boston, New York City, Los Angeles, Denver and Washington,
+  D.C. — over its own licensed millimeter-wave spectrum and proprietary radio hardware
+  rather than leased last-mile cable or fiber. Consumer plans run from Starry 200 (200
+  Mbps, $30/mo) to Starry Gigabit (1 Gbps, $45/mo), month-to-month with no data caps,
+  a bundled Wi-Fi router and a three-year price lock, alongside a Starry Connect program
+  for affordable-housing properties and a wholesale/bulk offering for property owners.
+  Starry restructured through Chapter 11 in 2023 and was acquired by Verizon in a deal
+  announced October 2025. It is a consumer/property-facing broadband operator: it runs
+  an authenticated customer account portal and publishes an llms.txt and a substantial
+  open-source GitHub organization, but it operates no public developer program and
+  publishes no machine-readable API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/starry/refs/heads/main/apis.yml
+image: https://dyajmw2sca9cs.cloudfront.net/img/logo/starry-logo.jpg
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
+x-secondary-market-listing: https://forgeglobal.com/starry_stock/
 specificationVersion: '0.20'
 created: '2026-08-29'
 modified: '2026-08-29'
 tags:
 - Company
+- Internet Service Provider
+- Broadband
+- Fixed Wireless
+- Telecommunications
+- Networking
+- Consumer Internet
+- Millimeter Wave
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +40,53 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/starry_stock/
+  url: https://starry.com/
+- type: Pricing
+  url: https://starry.com/internet
+- type: Support
+  url: https://support.starry.com/hc/en-us
+- type: Login
+  url: https://account.starry.com/login
+- type: Blog
+  url: https://starry.com/blog
+- type: GitHubOrganization
+  url: https://github.com/StarryInternet
+- type: TermsOfService
+  url: https://starry.com/legal/tos
+- type: PrivacyPolicy
+  url: https://starry.com/legal/privacy
+- type: LLMsTxt
+  url: llms/starry-llms.txt
+- type: Packages
+  url: packages/starry-packages.yml
+- type: Plans
+  url: plans/starry-plans-pricing.yml
+- type: DomainSecurity
+  url: security/starry-domain-security.yml
+x-enrichment:
+  date: '2026-08-29'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Starry is a consumer/property-facing fixed-wireless ISP with no developer program at
+    all — developer.starry.com, docs.starry.com and api.starry.com do not resolve in DNS,
+    starry.com/developers and starry.com/api both 404, and the 30-URL sitemap.xml contains
+    only marketing, city-coverage, careers and legal pages; the sole machine surface found
+    is the authenticated customer account portal at account.starry.com, which answers every
+    path (including /.well-known/*) with a hapi-style JSON 401 "Missing authentication".
+  evidence:
+  - url: https://starry.com/openapi.json
+    status: 404
+  - url: https://starry.com/developers
+    status: 404
+  - url: https://developer.starry.com/
+    status: 0
+  - url: https://account.starry.com/openapi.json
+    status: 401
+  - url: https://starry.com/llms.txt
+    status: 200
+  checked: '2026-08-29'

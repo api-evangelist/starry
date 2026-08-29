@@ -1,0 +1,146 @@
+generated: '2026-08-29'
+method: searched
+source: https://github.com/StarryInternet + registry.npmjs.org metadata for each package
+note: >-
+  IMPORTANT SCOPE NOTE — none of these are API client SDKs. Starry publishes no public
+  API, so it ships no client library for one. What the StarryInternet GitHub organization
+  (verified, 57 public repos, Boston MA) and its npm account do publish is a set of
+  first-party general-purpose open-source utilities written for Starry's own network and
+  device stack: stream message framing, memoization, US street-address parsing, cron/
+  supervisord helpers, an internal ESLint config, and a Swift CoreBluetooth wrapper. They
+  are recorded here as a real, dated, first-party published-code surface. NO `SDKs`
+  pointer is wired in apis.yml, because wiring one would credit Starry with client
+  libraries for an API it does not operate.
+registries_checked:
+- registry.npmjs.org
+- github.com/StarryInternet (releases + tags)
+decay_signal: >-
+  Every JavaScript package here last published between 2017 and 2021. The most recently
+  released is eslint-plugin-starry 8.0.0 (2021-10-18); the most recently touched source
+  repository is fringe (pushed 2026-08-13) whose npm release still dates to 2019-02-19.
+  A consumer installing any of these today gets a build five to nine years old.
+packages:
+- name: missive
+  registry: npm
+  url: https://www.npmjs.com/package/missive
+  repository: https://github.com/StarryInternet/missive
+  language: JavaScript
+  official: true
+  version: 3.0.1
+  published: '2019-02-19'
+  description: Fast, lightweight library for encoding and decoding JSON messages over streams.
+- name: fringe
+  registry: npm
+  url: https://www.npmjs.com/package/fringe
+  repository: https://github.com/StarryInternet/fringe
+  language: JavaScript
+  official: true
+  version: 1.1.1
+  published: '2019-02-19'
+  description: Fast, lightweight, and extensible message framing over streams.
+  note: Source repo still receives commits (last pushed 2026-08-13) but no release has been cut since 2019.
+- name: map-memo
+  registry: npm
+  url: https://www.npmjs.com/package/map-memo
+  repository: https://github.com/StarryInternet/map-memo
+  language: JavaScript
+  official: true
+  version: 2.1.1
+  published: '2017-02-09'
+  description: Generic memoization with Map and WeakMap.
+- name: street-suffix
+  registry: npm
+  url: https://www.npmjs.com/package/street-suffix
+  repository: https://github.com/StarryInternet/street-suffix
+  language: JavaScript
+  official: true
+  version: 1.0.1
+  published: '2019-02-05'
+  description: US street-suffix normalization.
+- name: place-parser
+  registry: npm
+  url: https://www.npmjs.com/package/place-parser
+  repository: https://github.com/StarryInternet/place-parser
+  language: JavaScript
+  official: true
+  version: 1.0.1
+  published: '2017-02-09'
+  description: Break Google Places up into US address components.
+- name: crony
+  registry: npm
+  url: https://www.npmjs.com/package/crony
+  repository: https://github.com/StarryInternet/crony
+  language: JavaScript
+  official: true
+  version: 0.5.0
+  published: '2017-09-10'
+  description: Node.js library for implementing supervisord event listeners.
+- name: tinyco
+  registry: npm
+  url: https://www.npmjs.com/package/tinyco
+  repository: https://github.com/StarryInternet/tinyco
+  language: JavaScript
+  official: true
+  version: 1.0.1
+  published: '2017-02-09'
+  description: Simple coroutines using generators.
+- name: coify
+  registry: npm
+  url: https://www.npmjs.com/package/coify
+  repository: https://github.com/StarryInternet/coify
+  language: JavaScript
+  official: true
+  version: 0.1.2
+  published: '2017-02-09'
+  description: Transform generator methods into co-wrapped functions.
+- name: threewords
+  registry: npm
+  url: https://www.npmjs.com/package/threewords
+  repository: https://github.com/StarryInternet/threewords
+  language: JavaScript
+  official: true
+  version: 0.0.1
+  published: '2017-08-04'
+  description: Three-word identifier generator.
+- name: jobi
+  registry: npm
+  url: https://www.npmjs.com/package/jobi
+  repository: https://github.com/StarryInternet/jobi
+  language: JavaScript
+  official: true
+  version: 1.0.0
+  published: '2020-01-30'
+  description: Logging utility.
+- name: eslint-plugin-starry
+  registry: npm
+  url: https://www.npmjs.com/package/eslint-plugin-starry
+  repository: https://github.com/StarryInternet/eslint-plugin-starry
+  language: JavaScript
+  official: true
+  version: 8.0.0
+  published: '2021-10-18'
+  description: Starry's internal ESLint rule plugin.
+- name: CombineCoreBluetooth
+  registry: github
+  url: https://github.com/StarryInternet/CombineCoreBluetooth
+  repository: https://github.com/StarryInternet/CombineCoreBluetooth
+  language: Swift
+  official: true
+  version: null
+  published: null
+  note: >-
+    Distributed as a Swift Package (no central registry metadata endpoint to query;
+    Swift Package Manager resolves versions from git tags). 142 stars, source last
+    pushed 2024-10-31. Version left null rather than guessed.
+excluded:
+- name: eslint-config-starry
+  registry: npm
+  reason: >-
+    The npm name eslint-config-starry is an npm security-holder placeholder
+    (repository git+https://github.com/npm/security-holder.git, version
+    0.0.1-security, 2020-02-12), NOT a Starry release, even though
+    github.com/StarryInternet/eslint-config-starry exists. Excluded to avoid
+    attributing a placeholder package to the company.
+- name: nyc-config-starry
+  registry: npm
+  reason: Repository exists on GitHub but the name is unpublished on npm (registry returns no dist-tags).

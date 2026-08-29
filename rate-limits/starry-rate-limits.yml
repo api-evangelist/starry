@@ -1,0 +1,24 @@
+generated: '2026-08-29'
+method: searched
+source: https://starry.com/ (site + sitemap.xml walked), https://starry.com/llms.txt
+limit_count: 0
+note: >-
+  Honest zero. Starry publishes no public API, no developer portal and no API reference,
+  so there is no documented rate limit to record and no runtime rate-limit header to
+  observe. The only JSON surface found is the authenticated customer account portal at
+  https://account.starry.com/, which answers every unauthenticated request with
+  {"statusCode":401,"error":"Unauthorized","message":"Missing authentication"} before any
+  rate-limit header is emitted. NO `RateLimits` pointer is wired in apis.yml: this file
+  documents an absence, and pointing at it would score as though limits were published.
+headers_observed: []
+limits: []
+evidence:
+- url: https://starry.com/developers
+  status: 404
+- url: https://starry.com/api
+  status: 404
+- url: https://developer.starry.com/
+  status: 0
+  note: DNS NXDOMAIN — host does not resolve.
+- url: https://account.starry.com/
+  status: 401
