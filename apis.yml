@@ -14,6 +14,20 @@ description: 'Starry, Inc. is a Boston-founded (2014) internet service provider 
   open-source GitHub organization, but it operates no public developer program and
   publishes no machine-readable API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/starry/refs/heads/main/apis.yml
+accessModel:
+  pricing: paid
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Paid
+  confidence: medium
+  source:
+  - plans
+  - rate-limits
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://dyajmw2sca9cs.cloudfront.net/img/logo/starry-logo.jpg
 x-type: company
 x-source: harvest:secondary-market
