@@ -74,3 +74,28 @@ enterprise:
   url: https://starry.com/properties
   price: null
   note: Bulk and wholesale pricing for property managers and building owners is quote-only; no published rate card.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Starry 200
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Starry 500
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Starry Gigabit
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
