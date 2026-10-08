@@ -53,6 +53,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: RateLimits
+  url: rate-limits/starry-rate-limits.yml
 - type: Website
   url: https://starry.com/
 - type: Pricing
